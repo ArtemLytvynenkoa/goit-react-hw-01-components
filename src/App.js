@@ -1,8 +1,10 @@
 import Container from "./Components/Container";
 import Profile from "./Components/Profile";
 import Statistics from "./Components/Statistics";
+import FriendList from "./Components/FriendList";
 import userData from "./user.json";
 import statisticsData from "./data.json";
+import friendsData from "./friends.json";
 
 function App() {
   return (
@@ -14,8 +16,8 @@ function App() {
         avatar={userData.avatar}
         stats={userData.stats}
       />
-      <Statistics
-        statisticsData={statisticsData}/>
+      <Statistics statisticsData={statisticsData} />
+      <FriendList friends={friendsData}/>
       
     </Container>
   )

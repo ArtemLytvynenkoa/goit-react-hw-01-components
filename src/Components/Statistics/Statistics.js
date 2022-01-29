@@ -9,7 +9,7 @@ function Statistics({statisticsData}) {
             <ul className={s.stat_list}>
                 {
                     statisticsData.map(({ id, label, percentage }) => (
-                        <li className={s.item} key={id}>
+                        <li className={`${s.item} ${s[id]}`} key={id}>
                             <span className={s.label}>{label}</span>
                             <span className={s.percentage}>{percentage}%</span>
                         </li> 
